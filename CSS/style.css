@@ -255,7 +255,7 @@ div.menu a:hover {
 
  }
  .pkg-details h3 {
-    color: #333;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     margin-top: 0;
     font-size: 15px;
@@ -263,11 +263,11 @@ div.menu a:hover {
  
 
  .col-pkg-item:hover .pkg-details { /* بدي اطبق على pkg-details لما يكون hover  على col-pkg-item */
-    background-color: rgba(0, 0, 0, 0.04);
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
  }
  .col-pkg-item:hover .pkg-details h3 {
-    color: #fff;
+    color: rgb(0, 0, 0);
  }
 
 
