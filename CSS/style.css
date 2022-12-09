@@ -8,11 +8,11 @@ header .navbar .nav-item {
 body{
     overflow-x: hidden;
 }
-.v-sep {
+.v-sep { /* كلاس  الايقونات */
     position: relative;
     padding: 0 1rem;
 }
-.v-sep::before {
+.v-sep::before { /* الخط بين لايقونات */
     content: "";
     position: absolute;
     left: 0;
@@ -23,10 +23,10 @@ body{
     
 }
 
-.v-sep:last-child {
+.v-sep:last-child { /* طبق على اخر فقرة من اسم الكلاس المحدد */
     padding-right: 0;
 }
-/* section 2 */
+/* section 1 */
 #hero, #hero .carousel-item{
     height: 100vh;
 }
@@ -155,11 +155,11 @@ svg .card-body {
     background-color: #ff214f;
     color: #fff;
     border-radius: 100%;
-    display: table-cell;
+    display: table-cell; 
     height: 70px;
     width: 70px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: middle; /* يتم وضع العنصر في منتصف العنصر الأصل */
     margin-top: 1rem;
 }
 .card-body a {
@@ -168,10 +168,6 @@ svg .card-body {
 
 
 /* section 5 */
-.hero .he{
-    height: 70vh;
-}
-
 .hero .he h5{
     font-size: 1rem;
     color: #666;
@@ -179,7 +175,7 @@ svg .card-body {
 .hero .he h3{
     font-size: 1.1rem;
     color: #fff;
-    font-weight: normal;
+    font-weight: normal; /* لتحديد شمك الخط */
 }
 .hero .he p{
     color: #666;
@@ -212,10 +208,11 @@ div.menu a {
     color: #777;
     text-align: center;
     padding: 14px;
-    text-decoration: none;
+    text-decoration:none;
 }
 div.menu a:hover {
     color: black;
+    text-decoration: underline;
   }
 
 /* section 7 */
@@ -302,8 +299,33 @@ div.menu a:hover {
      text-transform:uppercase;
 }
 
+/* sectioon 9 */
+
+.ccbody{
+    margin: 0;
+}
+.phh {
+    width: 830px;
+    height: 600px;
+    margin-left: 15rem;
+}
+.tit {
+    color: #232323;
+    font-size: 14px;
+}
+.ttx {
+    font-size: 10;
+}
+
+
+.headd {
+    text-align:justify;
+    font-size: 30px;
+    margin-top: -1rem;
+}
+
  /* section 10 */
-#ee {
+ #ee {
     margin: 2rem 10rem;
 
 }
@@ -328,31 +350,6 @@ div.menu a:hover {
     width: 8%;
     color: #ff214f;
     margin-left: 32rem;
-}
-
-/* sectioon 9 */
-
-.ccbody{
-    margin: 0;
-}
-.phh {
-    width: 830px;
-    height: 600px;
-    margin-left: 15rem;
-}
-.tit {
-    color: #232323;
-    font-size: 12px;
-}
-.ttx {
-    font-size: 10;
-}
-
-
-.headd {
-    text-align:justify;
-    font-size: 30px;
-    margin-top: -1rem;
 }
 
 /* section 11 */
@@ -522,9 +519,9 @@ body, html {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/img25.jpg");
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center; /* تحدد خاصية موضع البداية لصورة الخلفية.*/
+    background-repeat: no-repeat;/* كيف سيتم تكرار صورة الخلفية */
+    background-size: cover; /* اخفاء زيادات الصورة */
     position: relative;
     overflow: hidden;
 }
@@ -543,13 +540,13 @@ body, html {
 
 .hero-text button {
     border: none;
-    outline: 0;
-    display: inline-block;
+    outline: 0; /* خط يتم رسمه حول العناصر  خارج الحدود */
+    display: inline-block; /* هو عرض عناصر القائمة أفقيًا بدلاً من عموديًا */
     padding: 10px 25px;
     color: black;
     background-color: #ddd;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; /* شكل المؤشر الماوس */
     text-transform: uppercase;
 }
 .btn-outline-dark {
@@ -599,7 +596,7 @@ body, html {
     border: 1px solid gainsboro;
     background-color: white;
     height: 60vh;
-   padding: 15%;
+    padding: 15%;
 }
 .slidee .slid .col-4 img{
     width: 40%;
@@ -614,12 +611,12 @@ body, html {
 .slidee .slid .col-4 .solid-col h5{
     color: #000;
     font-size: .8rem;
-    text-transform: uppercase;
+    text-transform: uppercase; /* تحديد حالة الاحرف  تكون كابيتال */
     margin-bottom: 0;
 }
 .slidee .slid .col-4 .solid-col h6{
     color: #939393;
-    font-weight: normal;
+    font-weight: normal; /* تحديد سمك الخط */
     font-size: .8rem;
     
 }
@@ -700,7 +697,7 @@ body, html {
 .finish{
     height: 78vh;
     background-color:#232323;
-    overflow: hidden;
+    overflow: hidden;/* اخفاء باقي المحتوى يكون غير مرئي */
    }
    .finish .row{
     padding-top: 4rem;
@@ -729,7 +726,7 @@ body, html {
    }
   
    .finish .row .col-3 .fin  .par-finish a{
-    text-decoration: none;
+    text-decoration: none; /* ما بدي خط تحت او فوق او بنص الكلام */
     color: #939393;
     font-size: .8rem;
 
@@ -758,7 +755,7 @@ body, html {
     color: #666;
    }
    .finish .col-3 i{
-   background-color: #232323;
+    background-color: #232323;
     border: 1px solid #666;
     color: #939393;
     padding: .3rem .4rem ;
